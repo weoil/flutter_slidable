@@ -944,7 +944,7 @@ class SlidableState extends State<Slidable>
         onVerticalDragStart: _directionIsXAxis ? null : _handleDragStart,
         onVerticalDragUpdate: _directionIsXAxis ? null : _handleDragUpdate,
         onVerticalDragEnd: _directionIsXAxis ? null : _handleDragEnd,
-        behavior: HitTestBehavior.opaque,
+        behavior: HitTestBehavior.translucent,
         child: content,
       );
     }
